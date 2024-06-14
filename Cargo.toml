@@ -1,0 +1,13 @@
+[package]
+name = "owm-to-elastic"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = { version = "0.4.21", features = ["max_level_debug", "release_max_level_warn"] }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.37.0", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+env_logger = "0.11.2"

@@ -1,0 +1,13 @@
+[Unit]
+Description=Weather to Elastic
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+[Service]
+Restart=on-failure
+RestartSec=30s
+
+ExecStart=/usr/local/bin/weather_to_elastic
+
+[Install]
+WantedBy=multi-user.target

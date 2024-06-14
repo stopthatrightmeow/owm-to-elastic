@@ -1,0 +1,8 @@
+[
+  {
+    "rename": {
+      "field": "dt",
+      "target_field": "@timestamp"
+    }
+  }
+]
